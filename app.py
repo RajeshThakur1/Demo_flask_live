@@ -6,6 +6,7 @@ __created_date__= "30-04-2022"
 
 from flask import Flask
 from flask_cors import CORS, cross_origin
+import config as cfg
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -23,4 +24,4 @@ def hello_world():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True,port=5000)
+    app.run(host="0.0.0.0", debug=True,port=cfg.port)
