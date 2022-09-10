@@ -12,3 +12,7 @@
 ```commandline
 source venv/activate
 ```
+Installation of requirements
+```commandline
+pip install -r requirements.txt
+```
